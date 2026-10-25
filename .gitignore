@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Recipe agent: secrets and runtime data (DATA_DIR contents) must never be committed
+.env.*
+!.env.example
+data/
+photos/
+logs/
+*.xlsx
+pending_records.jsonl
